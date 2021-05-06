@@ -18,6 +18,7 @@
         })(document);
     </script>
     <link rel="stylesheet" href="https://use.typekit.net/wsq8tcu.css">
+    <link href="styles/global.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/591f5bf3d7.js" crossorigin="anonymous"></script>
     <title>Community Science Museum | Home</title>
@@ -34,240 +35,294 @@
                 </div>
                 <p class="motto">"Explore together"</p>
             </a>
-            <div>
-                <label for="dropdown-searchbar" class="search-button"><i class="fas fa-search"></i></label>
-                <input type="checkbox" id="dropdown-searchbar">
-                <section class="searchbar-container">
-                    <form class="searchbar" action="action_page.php">
-                        <input type="text" placeholder="Search.." name="search" alt="search">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-                </section>
-            </div>
-            <div>
-                <label for="dropdown-menu" class="hamburger-menu"><i class="fas fa-bars"></i></label>
-                <input type="checkbox" id="dropdown-menu">
-                <section class="site-navigation">
-                    <div>
-                        <a href="about.html">
-                            <p>About us</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="events.html">
-                            <p>Events</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="explore.html">
-                            <p>Explore</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="exhibits.html">
-                            <p>Exhibits</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="involved.html">
-                            <p>Get involved</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="visit.html">
-                            <p>Visit us</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="booking.html">
-                            <p>Booking and</p>
-                            <span>application</span>
-                        </a>
-                    </div>
-                </section>
+            <div class="nav-icon-container">
+                <div>
+                    <label for="dropdown-searchbar" class="search-button"><i class="fas fa-search"></i></label>
+                    <input type="checkbox" id="dropdown-searchbar">
+                    <section class="searchbar-container">
+                        <form action="action_page.php">
+                            <input type="text" placeholder="Search.." name="search" alt="search" class="searchbar">
+                            <button type="submit" class="searchbar-button"><i
+                                    class="fas fa-search searchbar-trigger"></i></button>
+                        </form>
+                    </section>
+                </div>
+                <div>
+                    <label for="dropdown-menu" class="hamburger-menu"><i class="fas fa-bars"></i></label>
+                    <input type="checkbox" id="dropdown-menu">
+                    <section class="site-navigation">
+                        <div class="site-navigation-border">
+                            <a href="about.html">
+                                <p class="site-navigation-color">About us</p>
+                            </a>
+                        </div>
+                        <div class="site-navigation-border">
+                            <a href="events.html">
+                                <p class="site-navigation-color">Events</p>
+                            </a>
+                        </div>
+                        <div class="site-navigation-border">
+                            <a href="explore.html">
+                                <p class="site-navigation-color">Explore</p>
+                            </a>
+                        </div>
+                        <div class="site-navigation-border">
+                            <a href="exhibits.html">
+                                <p class="site-navigation-color">Exhibits</p>
+                            </a>
+                        </div>
+                        <div class="site-navigation-border">
+                            <a href="involved.html">
+                                <p class="site-navigation-color">Get involved</p>
+                            </a>
+                        </div>
+                        <div class="site-navigation-border">
+                            <a href="visit.html">
+                                <p class="site-navigation-color">Visit us</p>
+                            </a>
+                        </div>
+                        <div class="site-navigation-border">
+                            <a href="booking.html">
+                                <p class="booking-text-span site-navigation-color">
+                                    <span>Booking and</span>
+                                    <span>application</span>
+                                </p>
+                            </a>
+                        </div>
+                    </section>
+                </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="test">
-            <div class="image-container">
+        <section class="welcome-section">
+            <div class="top-image-container">
                 <img src="images/scott-webb-102825-mobile.jpg"
                     alt="image of the colourful outside wall of the museum with museum spelled along the side. A green hedge is seen below it"
-                    class="test-image">
+                    class="top-image">
             </div>
-            <h1>Come join us at the Community Science Museum where we are committed to making science accessible to all
-            </h1>
-            <a href="about.html"><button>About us</button></a>
-        </section>
-        <section>
-            <h2>Special Events and Echibitions</h2>
-            <div>
-                <a href="events.html">
-                    <div>
-                        <img src="images/andrew-ruiz-348421 mobile small.jpg"
-                            alt="Astronaut with yellow suite and helmet sitting in chair looking at many screens all around">
-                        <h3>Visiting Professor of Aeoronatutics</h3>
-                    </div>
-                </a>
-                <a href="events.html">
-                    <div>
-                        <img src="images/mammoth-1257288_1920 mobile small.jpg"
-                            alt="The full scale sceloton of a large Mammoth displayed in the museum">
-                        <h3>Night in the Museum</h3>
-                    </div>
-                </a>
-                <a href="events.html">
-                    <div>
-                        <img src="images/scientific-2040795_1280 mobile small.jpg"
-                            alt="Scientist whit a white lab coat and safet glasses, sitting on her knees looking in to the open door of the large turbine that are able to use and control wind to create power ">
-                        <h3>Energetica Exhibition on Loan</h3>
-                    </div>
-                </a>
+            <div class="welcome-section-container">
+                <h1>Come join us at the Community Science Museum where we are committed to making science accessible to
+                    all
+                </h1>
+                <a href="about.html"><button class="button">About us</button></a>
             </div>
         </section>
-        <section>
-            <h2>Explore</h2>
-            <div>
-                <div>
-                    <a href="explore.html"><img src="images/samuel-zeller-158996 mobile small.jpg"
-                            alt="A child wearing a VR headset looking upwards, seeing something in the VR headset"></a>
-                    <h3>For kids</h3>
-                    <p>Are you a young person looking to learn more about science?</p>
-                    <p>Come on down to our museum, there's plenty to see and do.</p>
-                    <a href="explore.html"><button>More info</button></a>
-                </div>
-                <div>
-                    <a href="explore.html"><img src="images/teacher-2816112 mobile small.jpg"
-                            alt="A cartoon teacher standing behind a desk. On the desk there is 2 science flasks, one with a red liquid and one with a green liquid"></a>
-                    <h3>For teachers</h3>
-                    <p>As a community-driven museum, we want to work with schools to create places of learning and
-                        exploring.</p>
-                    <a href="explore.html"><button>More info</button></a>
-                </div>
-                <div>
-                    <a href="explore.html"><img src="images/people-219985_1280 mobile small.jpg"
-                            alt="A man looking through a microscope"></a>
-                    <h3>For researchers</h3>
-                    <p>Are you looking to get involved with our team of researchers and academics? </p>
-                    <a href="explore.html"><button>More info</button></a>
+        <div class="spacing"></div>
+        <section class="special-events-section">
+            <div class="special-events-section-container">
+                <h2>Special Events and Echibitions</h2>
+                <div class="events-container">
+                    <a href="events.html">
+                        <div class="events-subcontainer events-colour-1">
+                            <img src="images/andrew-ruiz-348421 mobile small.jpg"
+                                alt="Astronaut with yellow suite and helmet sitting in chair looking at many screens all around"
+                                class="events-image">
+                            <h3>Visiting Professor of Aeoronatutics</h3>
+                        </div>
+                    </a>
+                    <a href="events.html">
+                        <div class="events-subcontainer events-colour-2">
+                            <img src="images/mammoth-1257288_1920 mobile small.jpg"
+                                alt="The full scale sceloton of a large Mammoth displayed in the museum"
+                                class="events-image">
+                            <h3>Night in the Museum</h3>
+                        </div>
+                    </a>
+                    <a href="events.html">
+                        <div class="events-subcontainer events-colour-3">
+                            <img src="images/scientific-2040795_1280 mobile small.jpg"
+                                alt="Scientist whit a white lab coat and safet glasses, sitting on her knees looking in to the open door of the large turbine that are able to use and control wind to create power"
+                                class="events-image">
+                            <h3>Energetica Exhibition on Loan</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
-        <section>
-            <h2>Exhibits</h2>
-            <div>
-                <a href="exhibits.html">
-                    <div>
-                        <img src="images/celso-405219 mobile small.jpg"
-                            alt="image showing the moon in its different stages of fullness stretch out next to one another. In the middle there is also 2 red moons">
-                        <h3>Cosmology</h3>
+        <div class="spacing"></div>
+        <section class="explore-section">
+            <div class="explore-section-container">
+                <h2>Explore</h2>
+                <div class="explore-container">
+                    <div class="explore-subcontainer explore-colour-1">
+                        <div class="explore-image-container">
+                            <a href="explore.html"><img src="images/samuel-zeller-158996 mobile small.jpg"
+                                    alt="A child wearing a VR headset looking upwards, seeing something in the VR headset"
+                                    class="explore-image"></a>
+                        </div>
+                        <div class="explore-text-container">
+                            <div>
+                                <h3>For kids</h3>
+                                <p class="explore-text">Are you a young person looking to learn more about science?</p>
+                                <p>Come on down to our museum, there's plenty to see and do.</p>
+                            </div>
+                            <a href="explore.html" class="explore-button"><button class="button">More info</button></a>
+                        </div>
                     </div>
-                </a>
-                <a href="exhibits.html">
-                    <div>
-                        <img src="images/skeleton-414543_1920 mobile small.jpg"
-                            alt="image showing for scelotons next to one another. From left there is a homo sapien sceloton, then there is a homo erectus sceloton, next there is a smaller sceloton of an gibbon ape, lastly there is a sceloton of a lemur ape">
-                        <h3>Evolution</h3>
+                    <div class="explore-subcontainer explore-colour-2">
+                        <div class="explore-image-container">
+                            <a href="explore.html"><img src="images/teacher-2816112 mobile small.jpg"
+                                    alt="A cartoon teacher standing behind a desk. On the desk there is 2 science flasks, one with a red liquid and one with a green liquid"
+                                    class="explore-image"></a>
+                        </div>
+                        <div class="explore-text-container">
+                            <div>
+                                <h3>For teachers</h3>
+                                <p class="explore-text">As a community-driven museum, we want to work with schools to
+                                    create
+                                    places of learning and
+                                    exploring.</p>
+                            </div>
+                            <a href="explore.html" class="explore-button"><button class="button">More info</button></a>
+                        </div>
                     </div>
-                </a>
-                <a href="exhibits.html">
-                    <div>
-                        <img src="images/samuel-zeller-113381 mobile small.jpg"
-                            alt="image of a plastic human model. The anatomy of a human is showcased on the model. From sceloton to inner organs">
-                        <h3>Biology and Medicine</h3>
+                    <div class="explore-subcontainer explore-colour-3">
+                        <div class="explore-image-container">
+                            <a href="explore.html"><img src="images/people-219985_1280 mobile small.jpg"
+                                    alt="A man looking through a microscope" class="explore-image"></a>
+                        </div>
+                        <div class="explore-text-container">
+                            <div>
+                                <h3>For researchers</h3>
+                                <p class="explore-text">Are you looking to get involved with our team of researchers and
+                                    academics? </p>
+                            </div>
+                            <a href="explore.html" class="explore-button"><button class="button">More info</button></a>
+                        </div>
                     </div>
-                </a>
-                <a href="exhibits.html">
-                    <div>
-                        <img src="images/jason-leung-1DjbGRDh7-E-unsplash mobile small.jpg"
-                            alt="image of a lego robot waving. It is built with to large eyes and two hands with a yellow square body and two rubber tracks that it can move around on. It is based on the movie Wall-E">
-                        <h3>Robotics and AI</h3>
-                    </div>
-                </a>
-                <a href="exhibits.html">
-                    <div>
-                        <img src="images/man-chung-XZcpTL3H_M0-unsplash mobile small.jpg"
-                            alt="image of a strawberry plant with greenleafs. On the stem of the plant there is a ladybug. In the background there is many green plants">
-                        <h3>Ecology</h3>
-                    </div>
-                </a>
-                <div>
-                    <a href="visit.html"><button>Visit us</button></a>
-                    <a href="involved.html"><button>Get involved</button></a>
                 </div>
             </div>
         </section>
+        <div class="spacing"></div>
+        <section class="exhibits-section">
+            <div class="exhibits-section-container">
+                <h2>Exhibits</h2>
+                <div class="exhibits-container">
+                    <a href="exhibits.html">
+                        <div class="exhibits-subcontainer exhibits-color-1">
+                            <img src="images/celso-405219 mobile small.jpg"
+                                alt="image showing the moon in its different stages of fullness stretch out next to one another. In the middle there is also 2 red moons"
+                                class="exhibits-image">
+                            <h3>Cosmology</h3>
+                        </div>
+                    </a>
+                    <a href="exhibits.html">
+                        <div class="exhibits-subcontainer exhibits-color-2">
+                            <img src="images/skeleton-414543_1920 mobile small.jpg"
+                                alt="image showing for scelotons next to one another. From left there is a homo sapien sceloton, then there is a homo erectus sceloton, next there is a smaller sceloton of an gibbon ape, lastly there is a sceloton of a lemur ape"
+                                class="exhibits-image">
+                            <h3>Evolution</h3>
+                        </div>
+                    </a>
+                    <a href="exhibits.html">
+                        <div class="exhibits-subcontainer exhibits-color-3">
+                            <img src="images/samuel-zeller-113381 mobile small.jpg"
+                                alt="image of a plastic human model. The anatomy of a human is showcased on the model. From sceloton to inner organs"
+                                class="exhibits-image">
+                            <h3>Biology and Medicine</h3>
+                        </div>
+                    </a>
+                    <a href="exhibits.html">
+                        <div class="exhibits-subcontainer exhibits-color-4">
+                            <img src="images/jason-leung-1DjbGRDh7-E-unsplash mobile small.jpg"
+                                alt="image of a lego robot waving. It is built with to large eyes and two hands with a yellow square body and two rubber tracks that it can move around on. It is based on the movie Wall-E"
+                                class="exhibits-image">
+                            <h3 class="exhibits-robotics-h3">Robotics and AI</h3>
+                        </div>
+                    </a>
+                    <a href="exhibits.html">
+                        <div class="exhibits-subcontainer exhibits-color-5">
+                            <img src="images/man-chung-XZcpTL3H_M0-unsplash mobile small.jpg"
+                                alt="image of a strawberry plant with greenleafs. On the stem of the plant there is a ladybug. In the background there is many green plants"
+                                class="exhibits-image">
+                            <h3>Ecology</h3>
+                        </div>
+                    </a>
+                    <div class="exhibits-buttons">
+                        <a href="visit.html"><button class="button">Visit us</button></a>
+                        <a href="involved.html"><button class="button get-involved-button">Get involved</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacing"></div>
         <section>
-            <h3>Follow us on social media for weekly uploads of science facts</h3>
-            <div>
-                <div>
-                    <a href=""><i class="fab fa-youtube"></i></a>
-                </div>
-                <div>
-                    <a href=""><i class="fab fa-tiktok"></i></a>
-                </div>
-                <div>
-                    <a href=""><i class="fab fa-snapchat"></i></a>
-                </div>
-                <div>
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                </div>
-                <div>
-                    <a href=""><i class="fab fa-twitter"></i></a>
+            <div class="social-section-container">
+                <h3>Follow us on social media for weekly uploads of science facts</h3>
+                <div class="social-icons-container">
+                    <div>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fab fa-snapchat"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <div class="spacing"></div>
     <footer>
-        <section>
-            <div>
-                <p>Opening Hours:</p>
-            </div>
-            <div>
-                <p>
-                    Mon: Closed
-                </p>
-                <p>
-                    Tue: 10:00 – 16:00
-                </p>
-                <p>
-                    Wed: 10:00 – 16:00
-                </p>
-                <p>
-                    Thu: 10:00 – 16:00
-                </p>
-                <p>
-                    Fri: 10:00 – 19:00
-                </p>
-                <p>
-                    Sat: 9:00 – 16:00
-                </p>
-                <p>
-                    Sun: 9:00 – 13:00
-                </p>
-            </div>
-        </section>
-        <section>
-            <div>
-                <p>Address and Contact</p>
-            </div>
-            <div>
-                <i class="fas fa-map-pin"></i>
-                <p>Folke Bernadottes vei 40, 5147 Fyllingsdalen.</p>
-            </div>
-            <div>
-                <i class="fas fa-envelope"></i>
-                <a href="">
-                    <p>info@csm.no</p>
-                </a>
-            </div>
-            <div>
-                <i class="fas fa-phone-alt"></i>
-                <a href="">
-                    <p>(+47) 999 99 999</p>
-                </a>
-            </div>
-        </section>
+        <div class="footer-container">
+            <section class="hours-section">
+                <div>
+                    <p class="footer-heading">Opening Hours:</p>
+                </div>
+                <div>
+                    <p class="hours-text">
+                        Mon: Closed
+                    </p>
+                    <p class="hours-text">
+                        Tue: 10:00 – 16:00
+                    </p>
+                    <p class="hours-text">
+                        Wed: 10:00 – 16:00
+                    </p>
+                    <p class="hours-text">
+                        Thu: 10:00 – 16:00
+                    </p>
+                    <p class="hours-text">
+                        Fri: 10:00 – 19:00
+                    </p>
+                    <p class="hours-text">
+                        Sat: 9:00 – 16:00
+                    </p>
+                    <p class="hours-text">
+                        Sun: 9:00 – 13:00
+                    </p>
+                </div>
+            </section>
+            <section class="address-section">
+                <div>
+                    <p class="footer-heading">Address and Contact</p>
+                </div>
+                <div class="address-info">
+                    <i class="fas fa-map-pin"></i>
+                    <p class="address-text">Folke Bernadottes vei 40, 5147 Fyllingsdalen.</p>
+                </div>
+                <div class="address-info">
+                    <i class="fas fa-envelope"></i>
+                    <a href="">
+                        <p class="address-text">info@csm.no</p>
+                    </a>
+                </div>
+                <div class="address-info">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="">
+                        <p class="address-text">(+47) 999 99 999</p>
+                    </a>
+                </div>
+            </section>
+        </div>
     </footer>
 
 </body>
