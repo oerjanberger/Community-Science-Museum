@@ -119,7 +119,7 @@ h2 {
 
 .explore-subcontainer {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     gap: 15px;
     font-size: 0.8rem;
     min-height: 190px;
@@ -160,7 +160,8 @@ h2 {
 .explore-text-container {
     display: grid;
     grid-template-rows: auto auto;
-    max-width: 200px;
+    max-width: 400px;
+    margin-right: 10px;
 }
 
 .explore-text {
@@ -176,6 +177,7 @@ h2 {
 .exhibits-container {
     display: grid;
     grid-template-columns: auto auto auto;
+    justify-content: space-around;
     gap: 15px;
 }
 
@@ -193,11 +195,133 @@ h2 {
 .social-section-container h3{
     text-align: center;
     font-size: 0.9rem;
-    display: inline-block;
     padding: 0px 20px;
 }
 
 .social-icons-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0px auto;
+}
+
+
+/* media queries for this page */
+
+@media (min-width: 600px) {
+    h2 {
+        padding-left: 50px;
+    }
+    
+    .events-subcontainer,
+    .exhibits-subcontainer  {
+        max-width: 150px;
+        min-height: 200px;
+    }
+
+    .events-colour-2,
+    .exhibits-color-2,
+    .exhibits-color-3,
+    .exhibits-color-5 {
+        width: 200px;
+    }
+
+    .events-image,
+    .exhibits-image {
+        width: 140px;
+        max-height: 120px;
+        border-radius: 10px;
+    }
+
+    .explore-image {
+        width: 140px;
+    }
+
+    .explore-subcontainer {
+        height: 200px;
+    }
+
+    .exhibits-buttons {
+        justify-self: center;
+    }
+
+    
+
+}
+
+@media (min-width: 760px) {
+    .welcome-section h1,
+    h2,
+    .special-events-section h3,
+    .exhibits-section h3,
+    .social-section-container h3,
+    p {
+        font-size: 1.2rem;
+    }
+    
+    .top-image {
+        max-height: 50vh;
+    }
+
+    .welcome-section-container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+
+    .welcome-section h1 {
+        text-align: left;
+        max-width: 450px;
+        padding-left: 50px;
+    }
+
+
+    .events-subcontainer,
+    .exhibits-subcontainer {
+        max-width: 230px;
+        min-height: 280px;
+    }
+
+    .events-colour-1,
+    .events-colour-2,
+    .events-colour-3,
+    .exhibits-color-1,
+    .exhibits-color-2,
+    .exhibits-color-3,
+    .exhibits-color-4,
+    .exhibits-color-5 {
+        width: 230px;
+    }
+
+    .events-image,
+    .explore-image,
+    .exhibits-image {
+        width: 220px;
+        max-height: 200px;
+        border-radius: 10px;
+    }
+
+    .events-subcontainer h3,
+    .exhibits-section h3 {
+        margin-top: 10px;
+    }
+
+    .explore-subcontainer {
+        width: 730px;
+        height: 240px;
+        margin: 0px auto;
+    }
+
+    .exhibit-buttons {
+        width: 200px;
+        font-size: 1.2rem;
+    }
+    
+    
+}
+
+@media (min-width: 860px) {
+    .explore-subcontainer { 
+        width: 840px;
+    }
 }

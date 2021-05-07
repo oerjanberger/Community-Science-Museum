@@ -35,9 +35,15 @@ header {
     border: 1px black solid;
 }
 
-nav,
-.footer-container {
+nav {
     max-width: 900px;
+    margin: 0px auto;
+}
+
+
+
+.footer-container {
+    max-width: 760px;
     margin: 0px auto;
 }
 
@@ -89,9 +95,8 @@ label:hover {
 }
 
 .searchbar-container {
-    position: fixed;
-    right: 6px;
-    flex-direction: column;
+    position: absolute;
+    right: 8px;
     background-color: #e6e6e6;
     padding: 10px;
     border: 1px black solid;
@@ -110,7 +115,7 @@ label:hover {
 }
 
 .site-navigation {
-    position: fixed;
+    position: absolute;
     left: 8px;
     background-color: #e6e6e6;
     border: 1px black solid;
@@ -223,4 +228,53 @@ footer {
 .searchbar-trigger {
     padding: 0px;
     font-size: 1rem;
+}
+
+@media (min-width: 900px) {
+    .nav-icon-container {
+        flex-direction: row-reverse;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .site-navigation {
+        position: relative;
+        display: flex;
+        background-color: transparent;
+        border: none;
+        margin-top: 20px;
+        
+    }
+
+    .site-navigation-border {
+        border: none;
+        padding-right: 10px;
+    }
+
+    .site-navigation p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .search-button-container {
+        place-self: center;
+    }
+
+    .searchbar-container {
+        margin-top: 16px;
+    }
+
+    #dropdown-menu:checked ~ .site-navigation {
+        display: flex;
+    }
+}
+
+
+@media (min-width: 1220px) {
+    .searchbar-container {
+        position: absolute;
+        right: auto;
+    }
 }
