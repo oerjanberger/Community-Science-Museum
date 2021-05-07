@@ -1,18 +1,80 @@
-
-header {
-    background-color: #e6e6e6;
-}
-
-body {
+.logo-container,
+.about-subcontainer,
+.contact-subcontainer {
+    max-width: 600px;
     margin: 0px auto;
+    place-content: center;
 }
 
-nav {
-    margin: 0px auto;
+.museum-name {
+    font-size: 1.2rem;
+    color: #3FA652;
+    text-shadow: -1px 0 #21552A, 0 1px #21552A, 1px 0 #21552A, 0 -1px #21552A;
+    margin-bottom: 0px;
 }
 
-.motto {
-    font-size: 1.5rem;
+.about-page-motto {
+    margin-top: 0px;
+}
+
+.about-container {
+    background-color: #D7DED4;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin-top: 0px;
+}
+
+h2 {
+    padding-left: 20px;
+}
+
+.about-subcontainer,
+.contact-section {
+    padding: 20px 10px;
+}
+
+.about-button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.contact-section {
+    background-color: #E88A9B;
+}
+
+.contact-info-container {
+    margin-left: 20px;
+}
+
+.contact-text {
     color: black;
-    margin: 0px auto;
+}
+
+@media (min-width: 900px) {
+    .about-page-logo {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .museum-name {
+        font-size: 2rem;
+    }
+    
+    .contact-info-subcontainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .contact-boxes {
+        width: 200px;
+    }
+
+    .contact-button {
+        place-content: center;
+        margin-top: 20px;
+    }
 }

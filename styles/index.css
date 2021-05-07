@@ -1,13 +1,4 @@
 /* Main body index page*/
-.top-image {
-    width: 100%;
-}
-
-.top-image-container {
-    margin: 0px auto;
-    max-width: 1920px
-}
-
 .welcome-section-container,
 .special-events-section-container,
 .explore-section-container,
@@ -37,27 +28,10 @@
     padding: 0px 10px;
 }
 
-.spacing {
-    min-height: 20px;
-}
-
 .special-events-section,
 .exhibits-section {
     background-color: #e6e6e6;
     padding-bottom: 20px;
-}
-
-h2 {
-    font-size: 1rem;
-    font-weight: bold;
-    display: inline-block;
-    padding-left: 15px;
-}
-
-.special-events-section h3,
-.exhibits-section h3 {
-    font-size: 0.8rem;
-    margin-top: 0px;
 }
 
 .events-container {
@@ -146,7 +120,7 @@ h2 {
 }
 
 .explore-container h3 {
-    margin-bottom: 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 .explore-image-container {
@@ -168,11 +142,17 @@ h2 {
     margin-top: 0px;
 }
 
+.explore-kids-text {
+    margin-bottom: 0px;
+}
+
 .explore-button {
     justify-self: flex-end;
     align-self: flex-end;
     margin-bottom: 10px;
+
 }
+
 
 .exhibits-container {
     display: grid;
@@ -194,7 +174,6 @@ h2 {
 
 .social-section-container h3{
     text-align: center;
-    font-size: 0.9rem;
     padding: 0px 20px;
 }
 
@@ -250,19 +229,6 @@ h2 {
 }
 
 @media (min-width: 760px) {
-    .welcome-section h1,
-    h2,
-    .special-events-section h3,
-    .exhibits-section h3,
-    .social-section-container h3,
-    p {
-        font-size: 1.2rem;
-    }
-    
-    .top-image {
-        max-height: 50vh;
-    }
-
     .welcome-section-container {
         display: grid;
         grid-template-columns: auto 1fr;
