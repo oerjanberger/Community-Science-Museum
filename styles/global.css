@@ -26,11 +26,20 @@ h3 {
     font-family: noto-sans-cjk-kr, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+h1 {
+    font-size: 1.2rem;
+    margin-top: 0px;
+}
+
 h2 {
     font-size: 1rem;
     font-weight: bold;
     display: inline-block;
     padding-left: 15px;
+}
+
+.info-section-h2 {
+    padding-left: 20px;
 }
 
 h3 {
@@ -51,8 +60,6 @@ nav {
     max-width: 900px;
     margin: 0px auto;
 }
-
-
 
 .footer-container {
     max-width: 760px;
@@ -203,13 +210,45 @@ footer {
     max-width: 1920px
 }
 
+.section-subcontainer  {
+    max-width: 600px;
+    margin: 0px auto;
+    place-content: center;
+}
+
+
 .section-image {
     width: 100%;
+    max-height: 40vh;
 }
 
 .section-image-container {
     margin: 0px auto;
     max-width: 900px
+}
+
+.top-section {
+    background-color: #D7DED4;
+    min-height: 60px;
+    padding: 20px 10px 0px 10px;
+    margin-bottom: 20px;
+}
+
+.standard-section {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.red-section {
+    background-color: #E88A9B;
+}
+
+.aqua-section {
+    background-color: #4DD4D5;
+}
+
+.orange-section {
+    background-color: #D59F8E;
 }
 
 
@@ -284,6 +323,8 @@ footer {
     margin-right: 10px;
 }
 
+
+
 @media (min-width: 760px) {
     .logo-container {
         align-items: center;
@@ -302,7 +343,7 @@ footer {
     }
 
     .top-image {
-        max-height: 50vh;
+        max-height: 40vh;
     }
 
     .button {

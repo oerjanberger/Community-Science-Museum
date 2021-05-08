@@ -291,3 +291,14 @@
         width: 840px;
     }
 }
+
+@media (min-width: 900px) {
+    .explore-section {
+        background-image: url(../images/binoculars-2028304-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        max-width: 1920px;
+        min-height: 900px;
+        margin: 0px auto;
+    }
+}
