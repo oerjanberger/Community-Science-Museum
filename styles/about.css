@@ -1,3 +1,5 @@
+/* Main body about page*/
+
 .museum-name {
     font-size: 1.2rem;
     color: #3FA652;
@@ -11,10 +13,6 @@
 
 .about-container {
     background-color: #D7DED4;
-}
-
-.info-section-h2 {
-    padding-left: 20px;
 }
 
 .about-button-container {
@@ -31,6 +29,8 @@
 .contact-text {
     color: black;
 }
+
+/* Media queries for this page*/
 
 @media (min-width: 900px) {
     .about-page-logo {
