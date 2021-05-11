@@ -275,7 +275,7 @@ footer {
 .button {
     border-radius: 5px;
     border: 1px solid black;
-    box-shadow: 2px 2px #A4A4A4;
+    box-shadow: 3px 3px rgba(48, 51, 54, 0.4);
     font-family: noto-sans-cjk-kr, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
