@@ -92,7 +92,7 @@ h2 {
     border-radius: 10px;
     color: black;
     text-align: center;
-    box-shadow: 3px 3px #A4A4A4;
+    box-shadow: 3px 3px rgba(48, 51, 54, 0.4);
 }
 
 .explore-subcontainer {
@@ -103,7 +103,7 @@ h2 {
     min-height: 190px;
     border-radius: 10px;
     padding-left: 5px;
-    box-shadow: 3px 3px #A4A4A4;
+    box-shadow: 3px 3px rgba(48, 51, 54, 0.4);
 }
 
 .exhibits-subcontainer {
