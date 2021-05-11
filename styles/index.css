@@ -9,6 +9,10 @@
     margin: 0px auto;
 }
 
+h2 {
+    padding-left: 10px;
+}
+
 .welcome-section {
     background-color: #D7DED4;
     text-align: center;
