@@ -19,6 +19,7 @@
     </script>
     <link rel="stylesheet" href="https://use.typekit.net/wsq8tcu.css">
     <link href="styles/global.css" rel="stylesheet">
+    <link href="styles/booking.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/591f5bf3d7.js" crossorigin="anonymous"></script>
     <title>Community Science Museum | Booking and application</title>
 </head>
@@ -39,7 +40,7 @@
                     <label for="dropdown-searchbar" class="search-button"><i class="fas fa-search"></i></label>
                     <input type="checkbox" id="dropdown-searchbar">
                     <section class="searchbar-container">
-                        <form action="action_page.php">
+                        <form action="search_result.php" method="POST">
                             <input type="text" placeholder="Search.." name="search" alt="search" class="searchbar">
                             <button type="submit" class="searchbar-button"><i
                                     class="fas fa-search searchbar-trigger"></i></button>
@@ -105,43 +106,145 @@
             <div class="section-subcontainer">
                 <h1>Booking and Application</h1>
                 <div>
-                    <h2 class="info-heading">Special events</h2>
-                    <form action="action_page.php">
-                        <div>
-                            <label for="name">Name</label>
-                            <input type="name" placeholder="Name.." name="name" alt="name"
-                                class="searchbar booking-large">
-                            <label for="email">Email</label>
-                            <input type="email" placeholder="Email.." name="email" alt="email"
-                                class="searchbar booking-large">
+                    <h2>Special events</h2>
+                    <form action="events.php" method="POST">
+                        <div class="booking-container">
+                            <div class="booking-subcontainer">
+                                <label for="name">Name</label>
+                                <input type="name" placeholder="Name.." name="name" alt="name"
+                                    class="searchbar booking-large">
+                            </div>
+                            <div class="booking-subcontainer">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Email.." name="email" alt="email"
+                                    class="searchbar booking-large">
+                            </div>
                         </div>
-                        <div>
-                            <p>Number of persons</p>
-                            <label for="adults">Adults</label>
-                            <input type="number" placeholder="0" name="adults" alt="adults"
-                                class="searchbar booking-small">
-                            <label for="children">Children</label>
-                            <input type="number" placeholder="0" name="children" alt="children"
-                                class="searchbar booking-small">
+                        <p>Number of persons</p>
+                        <div class="side-by-side-container">
+                            <div class="booking-subcontainer person-container">
+                                <label for="adults">Adults</label>
+                                <input type="number" placeholder="0" name="adults" alt="adults"
+                                    class="searchbar booking-small">
+                            </div>
+                            <div class="booking-subcontainer person-container">
+                                <label for="children">Children</label>
+                                <input type="number" placeholder="0" name="children" alt="children"
+                                    class="searchbar booking-small">
+                            </div>
                         </div>
-                        <h3 class="info-heading">Visiting Professor of Aeronatutics</h3>
-                        <div>
-                            <input type="checkbox" name="date" value="24.05" id="24.05"><label for="24.05">24.05</label>
-                            <input type="checkbox" name="date" value="26.05" id="26.05"><label for="26.05">26.05</label>
-                            <input type="checkbox" name="date" value="28.05" id="28.05"><label for="28.05">28.05</label>
+                        <div class="booking-events-container">
+                            <div>
+                                <h3>Visiting Professor of Aeronatutics</h3>
+                                <input type="checkbox" name="date" value="24.05" id="date-1"><label for="date-1"
+                                    class="dates date-1">24.05</label>
+                                <input type="checkbox" name="date" value="26.05" id="date-2"><label for="date-2"
+                                    class="dates date-2">26.05</label>
+                                <input type="checkbox" name="date" value="28.05" id="date-3"><label for="date-3"
+                                    class="dates date-3">28.05</label>
+                            </div>
+                            <div>
+                                <h3 class="info-heading">Night in the Museum</h3>
+                                <input type="checkbox" name="date" value="29.05" id="date-4"><label for="date-4"
+                                    class="dates date-4">29.05</label>
+                                <input type="checkbox" name="date" value="05.06" id="date-5"><label for="date-5"
+                                    class="dates date-5">05.06</label>
+                                <input type="checkbox" name="date" value="12.06" id="date-6"><label for="date-6"
+                                    class="dates date-6">12.06</label>
+                            </div>
                         </div>
-                        <h3 class="info-heading">Night in the Museum</h3>
-                        <div>
-                            <input type="checkbox" name="date" value="29.05" id="29.05"><label for="29.05">29.05</label>
-                            <input type="checkbox" name="date" value="05.06" id="05.06"><label for="05.06">05.06</label>
-                            <input type="checkbox" name="date" value="12.06" id="12.06"><label for="12.06">12.06</label>
-                        </div>
-
                     </form>
-                    <div class="right-button-container contact-button">
-                        <a href="confirmation.html"><button class="button">Book</button></a>
+                    <div class="right-button-container booking-events-button">
+                        <a href="confirmation.html"><button class="button">Book now</button></a>
                     </div>
-
+                </div>
+                <div>
+                    <h2>Groups</h2>
+                    <form action="group_tour.php" method="POST">
+                        <div class="booking-container">
+                            <div class="booking-subcontainer">
+                                <label for="name">Name</label>
+                                <input type="name" placeholder="Name.." name="name" alt="name"
+                                    class="searchbar booking-large">
+                            </div>
+                            <div class="booking-subcontainer">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Email.." name="email" alt="email"
+                                    class="searchbar booking-large">
+                            </div>
+                        </div>
+                        <p>Number of persons</p>
+                        <div class="side-by-side-container">
+                            <div class="booking-subcontainer person-container">
+                                <label for="adults">Adults</label>
+                                <input type="number" placeholder="0" name="adults" alt="adults"
+                                    class="searchbar booking-small">
+                            </div>
+                            <div class="booking-subcontainer person-container">
+                                <label for="children">Children</label>
+                                <input type="number" placeholder="0" name="children" alt="children"
+                                    class="searchbar booking-small">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="right-button-container">
+                        <a href="confirmation.html"><button class="button">Book now</button></a>
+                    </div>
+                </div>
+                <div>
+                    <h2>Join our clubs</h2>
+                    <form action="club.php" method="POST">
+                        <div class="booking-container">
+                            <div class="booking-subcontainer">
+                                <label for="name">Name</label>
+                                <input type="name" placeholder="Name.." name="name" alt="name"
+                                    class="searchbar booking-large">
+                            </div>
+                            <div class="booking-subcontainer">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Email.." name="email" alt="email"
+                                    class="searchbar booking-large">
+                            </div>
+                        </div>
+                        <p>I want to join the:</p>
+                        <div class="join-apply-container">
+                            <input type="checkbox" name="club" value="young star club" id="young-star-club"><label
+                                for="young-star-club" class="join-apply-checkbox young-star-club">Young Star
+                                Club</label>
+                            <input type="checkbox" name="club" value="holiday club" id="holiday-club"><label
+                                for="holiday-club" class="join-apply-checkbox holiday-club">Holiday Club</label>
+                        </div>
+                    </form>
+                    <div class="right-button-container booking-events-button">
+                        <a href="confirmation.html"><button class="button">Join now</button></a>
+                    </div>
+                </div>
+                <div>
+                    <h2>Get involved</h2>
+                    <form action="involved.php" method="POST">
+                        <div class="booking-container">
+                            <div class="booking-subcontainer">
+                                <label for="name">Name</label>
+                                <input type="name" placeholder="Name.." name="name" alt="name"
+                                    class="searchbar booking-large">
+                            </div>
+                            <div class="booking-subcontainer">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Email.." name="email" alt="email"
+                                    class="searchbar booking-large">
+                            </div>
+                        </div>
+                        <p>I want to:</p>
+                        <div class="join-apply-container">
+                            <input type="checkbox" name="involved" value="volunteer" id="volunteer"><label
+                                for="volunteer" class="join-apply-checkbox volunteer">Volunteer</label>
+                            <input type="checkbox" name="involved" value="internship" id="internship"><label
+                                for="internship" class="join-apply-checkbox internship">Internship</label>
+                        </div>
+                    </form>
+                    <div class="right-button-container booking-events-button">
+                        <a href="confirmation.html"><button class="button">Apply now</button></a>
+                    </div>
                 </div>
         </section>
         <section class="standard-section home-button-section">

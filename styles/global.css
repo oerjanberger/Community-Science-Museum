@@ -282,6 +282,25 @@ footer {
     background-color: #6FFF87;
     padding: 5px 20px;
     cursor: pointer;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.button::before {
+    content: "";
+    padding: 10px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    height: 80px;
+    top: -40px;
+    left: -100px;
+    transition: left ease-in-out 1s;
+}
+
+.button:hover:before {
+    left: 120%;
 }
 
 .get-involved-button {
@@ -301,7 +320,6 @@ footer {
 .home-button {
     background-color: #F7F7F7;
     color: #565656;
-    margin-right: 10px;
 }
 
 .side-by-side-button-container {

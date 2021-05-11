@@ -1,0 +1,149 @@
+h3 {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.booking-subcontainer {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-large {
+    max-width: 250px;
+    height: 30px;
+}
+
+.side-by-side-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+}
+
+.person-container {
+    margin-top: 0px;
+}
+
+.booking-small {
+    max-width: 50px;
+}
+
+input[type=number] {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.dates,
+.join-apply-checkbox {
+    background-color: #e6e6e6;
+    border: 1px solid black;
+    box-shadow: 2px 2px grey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dates {
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.join-apply-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.join-apply-checkbox {
+    padding: 5px 15px;
+}
+
+#date-1:checked ~ .date-1,
+#date-2:checked ~ .date-2,
+#date-3:checked ~ .date-3,
+#date-4:checked ~ .date-4,
+#date-5:checked ~ .date-5,
+#date-6:checked ~ .date-6,
+#young-star-club:checked ~ .young-star-club,
+#holiday-club:checked ~ .holiday-club,
+#volunteer:checked ~ .volunteer,
+#internship:checked ~ .internship {
+    background-color: #6FFF87;
+}
+
+#date-1,
+#date-2,
+#date-3,
+#date-4,
+#date-5,
+#date-6,
+#young-star-club,
+#holiday-club,
+#volunteer,
+#internship {
+    display: none;
+}
+
+.dates,
+.join-apply-checkbox {
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.dates:hover,
+.join-apply-checkbox:hover {
+    background-color: #6FFF87;
+}
+
+.info-heading {
+    margin: 30px 0px;
+}
+
+.booking-events-button {
+    margin-top: 40px;
+}
+
+/* Removing arrows from number input */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Media queries for this page */
+
+@media (min-width: 900px) {
+    .booking-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+    }
+
+    .booking-large {
+        width: 250px;
+        height: 30px;
+    }
+
+    .booking-events-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+    }
+
+    .info-heading {
+        margin-top: 0px;
+    }
+
+    .join-apply-container {
+        max-width: 600px;
+    }
+    
+    .join-apply-checkbox {
+        padding: 5px;
+        width: 240px;
+    }
+}
