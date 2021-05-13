@@ -1,14 +1,4 @@
 /* Main body index page*/
-.welcome-section-container,
-.special-events-section-container,
-.explore-section-container,
-.exhibits-section-container,
-.social-section,
-.social-section-container {
-    max-width: 900px;
-    margin: 0px auto;
-}
-
 h2 {
     padding-left: 10px;
 }
@@ -87,12 +77,17 @@ h2 {
 
 .events-subcontainer,
 .exhibits-subcontainer {
-    max-width: 100px;
+    width: 100px;
     padding: 4px 2px 0px 2px;
     border-radius: 10px;
     color: black;
     text-align: center;
     box-shadow: 3px 3px rgba(48, 51, 54, 0.4);
+}
+
+.explore-section {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .explore-subcontainer {
@@ -114,7 +109,7 @@ h2 {
 .explore-image,
 .exhibits-image {
     width: 95px;
-    max-height: 95px;
+    height: 95px;
     border-radius: 10px;
 }
 
@@ -132,7 +127,7 @@ h2 {
 }
 
 .explore-image {
-    max-height: 185px;
+    height: 170px;
 }
 
 .explore-text-container {
@@ -145,17 +140,11 @@ h2 {
     margin-top: 0px;
 }
 
-.explore-kids-text {
-    margin-bottom: 0px;
-}
-
 .explore-button {
     justify-self: flex-end;
     align-self: flex-end;
     margin-bottom: 10px;
-
 }
-
 
 .exhibits-container {
     display: grid;
@@ -175,6 +164,11 @@ h2 {
     justify-content: space-evenly;
 }
 
+.social-section-container,
+.welcome-image-container {
+    background-color: #f7f7f7;
+}
+
 .social-section-container h3{
     text-align: center;
     padding: 0px 20px;
@@ -187,7 +181,6 @@ h2 {
     margin: 0px auto;
 }
 
-
 /* media queries for this page */
 
 @media (min-width: 600px) {
@@ -197,38 +190,29 @@ h2 {
     
     .events-subcontainer,
     .exhibits-subcontainer  {
-        max-width: 150px;
+        width: 150px;
         min-height: 200px;
     }
 
-    .events-colour-2,
-    .exhibits-color-2,
-    .exhibits-color-3,
-    .exhibits-color-5 {
-        width: 200px;
+    .explore-subcontainer {
+        min-height: 200px;
     }
 
     .events-image,
     .exhibits-image {
         width: 140px;
-        max-height: 120px;
+        height: 120px;
         border-radius: 10px;
     }
 
     .explore-image {
         width: 140px;
-    }
-
-    .explore-subcontainer {
-        height: 200px;
+        height: 170px;
     }
 
     .exhibits-buttons {
         justify-self: center;
     }
-
-    
-
 }
 
 @media (min-width: 760px) {
@@ -247,26 +231,15 @@ h2 {
 
     .events-subcontainer,
     .exhibits-subcontainer {
-        max-width: 230px;
-        min-height: 280px;
-    }
-
-    .events-colour-1,
-    .events-colour-2,
-    .events-colour-3,
-    .exhibits-color-1,
-    .exhibits-color-2,
-    .exhibits-color-3,
-    .exhibits-color-4,
-    .exhibits-color-5 {
         width: 230px;
+        min-height: 280px;
     }
 
     .events-image,
     .explore-image,
     .exhibits-image {
         width: 220px;
-        max-height: 200px;
+        height: 200px;
         border-radius: 10px;
     }
 
@@ -285,8 +258,10 @@ h2 {
         width: 200px;
         font-size: 1.2rem;
     }
-    
-    
+
+    .explore-kids-text {
+        margin-bottom: 0px;
+    }
 }
 
 @media (min-width: 860px) {
@@ -296,12 +271,22 @@ h2 {
 }
 
 @media (min-width: 900px) {
-    .explore-section {
-        background-image: url(../images/binoculars-2028304-desktop.png);
+    .background {
+        background-image: url(../images/binoculars-2028304-scaled.png);
         background-repeat: no-repeat;
         background-size: 100%;
-        max-width: 1920px;
-        min-height: 900px;
-        margin: 0px auto;
+        width: 100%;
+        height: 900px;
+        position: fixed;
+        top: 5px;
+        bottom: 15px;
+        z-index: -10;
+    }
+
+    .explore-section h2 {
+        background-color: rgba(255, 255, 255, 0.8);
+        margin-left: 50px;
+        border-radius: 10px;
+        padding: 2px;
     }
 }
