@@ -1,20 +1,5 @@
 /* Main body index page*/
-h2 {
-    padding-left: 10px;
-}
-
-.welcome-section {
-    background-color: #D7DED4;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.welcome-section-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.welcome-section h1 {
+h1 {
     font-size: 1rem;
     max-width: 600px;
     margin: 10px auto;
@@ -22,10 +7,27 @@ h2 {
     padding: 0px 10px;
 }
 
-.special-events-section,
-.exhibits-section {
-    background-color: #e6e6e6;
+h2 {
+    padding-left: 10px;
+}
+
+/* The different sections of the page */
+
+.standard-index-section {
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.welcome-section {
+    background-color: #D7DED4;
+    text-align: center;
     padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.welcome-section-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .events-container {
@@ -35,40 +37,12 @@ h2 {
     gap: 5px;
 }
 
-.events-colour-1,
-.explore-colour-2,
-.exhibits-color-5 {
-    background-color: #E88A9B;
-    
-}
-
-.events-colour-2,
-.explore-colour-1,
-.exhibits-color-3  {
-    background-color: #4DD4D5;
-}
-
-.events-colour-3,
-.explore-colour-3,
-.exhibits-color-4 {
-    background-color: #D59F8E;
-    
-}
-
 .events-subcontainer-3 {
     margin-right: 5px;
 }
 
 .events-subcontainer-1 {
     margin-left: 5px;
-}
-
-.exhibits-color-1 {
-    background-color: #889AD5;
-}
-
-.exhibits-color-2 {
-    background-color: #DD96E5;
 }
 
 .events-subcontainer {
@@ -83,11 +57,6 @@ h2 {
     color: black;
     text-align: center;
     box-shadow: 3px 3px rgba(48, 51, 54, 0.4);
-}
-
-.explore-section {
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 .explore-subcontainer {
@@ -105,14 +74,6 @@ h2 {
     min-height: 150px;
 }
 
-.events-image,
-.explore-image,
-.exhibits-image {
-    width: 95px;
-    height: 95px;
-    border-radius: 10px;
-}
-
 .explore-container {
     display: grid;
     gap: 20px;
@@ -120,14 +81,6 @@ h2 {
 
 .explore-container h3 {
     margin: 10px 0px 0px 0px;
-}
-
-.explore-image-container {
-    align-self: center;
-}
-
-.explore-image {
-    height: 170px;
 }
 
 .explore-text-container {
@@ -164,11 +117,6 @@ h2 {
     justify-content: space-evenly;
 }
 
-.social-section-container,
-.welcome-image-container {
-    background-color: #f7f7f7;
-}
-
 .social-section-container h3{
     text-align: center;
     padding: 0px 20px;
@@ -181,7 +129,36 @@ h2 {
     margin: 0px auto;
 }
 
-/* media queries for this page */
+/* Images */
+.events-image,
+.explore-image,
+.exhibits-image {
+    width: 95px;
+    height: 95px;
+    border-radius: 10px;
+}
+
+.explore-image-container {
+    align-self: center;
+}
+
+.explore-image {
+    height: 170px;
+}
+
+/* Background colour */
+
+.special-events-section,
+.exhibits-section {
+    background-color: #e6e6e6;
+}
+
+.social-section-container,
+.welcome-image-container {
+    background-color: #f7f7f7;
+}
+
+/* Media queries for this page */
 
 @media (min-width: 600px) {
     h2 {

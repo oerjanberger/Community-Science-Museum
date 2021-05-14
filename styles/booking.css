@@ -1,3 +1,4 @@
+/* CSS specific for this page */
 h3 {
     font-size: 1rem;
     margin-bottom: 30px;
@@ -37,7 +38,7 @@ input[type=number] {
 .join-apply-checkbox {
     background-color: #e6e6e6;
     border: 1px solid black;
-    box-shadow: 2px 2px grey;
+    box-shadow: 3px 3px rgba(48, 51, 54, 0.4);
     border-radius: 5px;
     text-align: center;
 }
@@ -57,6 +58,16 @@ input[type=number] {
     padding: 5px 15px;
 }
 
+.info-heading {
+    margin: 30px 0px;
+}
+
+.booking-events-button {
+    margin-top: 40px;
+}
+
+
+/* Checkbbox hack */
 #date-1:checked ~ .date-1,
 #date-2:checked ~ .date-2,
 #date-3:checked ~ .date-3,
@@ -83,6 +94,7 @@ input[type=number] {
     display: none;
 }
 
+/* Hover */
 .dates,
 .join-apply-checkbox {
     transition-property: background-color;
@@ -94,16 +106,7 @@ input[type=number] {
     background-color: #6FFF87;
 }
 
-.info-heading {
-    margin: 30px 0px;
-}
-
-.booking-events-button {
-    margin-top: 40px;
-}
-
 /* Removing arrows from number input */
-
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -115,7 +118,6 @@ input[type=number] {
 }
 
 /* Media queries for this page */
-
 @media (min-width: 900px) {
     .booking-container {
         display: flex;
