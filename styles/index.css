@@ -15,11 +15,10 @@ h2 {
 
 .standard-index-section {
     padding-bottom: 40px;
-    margin-bottom: 20px;
 }
 
 .welcome-section {
-    background-color: #D7DED4;
+    background-color: var(--light-green);
     text-align: center;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -150,12 +149,12 @@ h2 {
 
 .special-events-section,
 .exhibits-section {
-    background-color: #e6e6e6;
+    background-color: var(--grey);
 }
 
 .social-section-container,
 .welcome-image-container {
-    background-color: #f7f7f7;
+    background-color: var(--white);
 }
 
 /* Media queries for this page */
@@ -265,5 +264,13 @@ h2 {
         margin-left: 50px;
         border-radius: 10px;
         padding: 2px;
+    }
+
+    .welcome-section {
+        margin-bottom: 0px;
+    }
+
+    .social-section-container {
+        padding-top: 20px;
     }
 }

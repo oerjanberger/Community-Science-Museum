@@ -17,7 +17,7 @@
 
 body {
     font-family: macho, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #F7F7F7;
+    background-color: var(--white);
 }
 
 /* Global headings */
@@ -58,7 +58,7 @@ label:hover {
 
 /* Header */
 header {
-    background-color: #e6e6e6;
+    background-color: var(--grey);
     border-bottom: 1px black solid;
 }
 
@@ -96,7 +96,7 @@ nav {
 .searchbar-container {
     position: absolute;
     right: 8px;
-    background-color: #e6e6e6;
+    background-color: var(--grey);
     padding: 10px;
     border: 1px black solid;
     border-radius: 5px;
@@ -117,7 +117,7 @@ nav {
 .site-navigation {
     position: absolute;
     left: 8px;
-    background-color: #e6e6e6;
+    background-color: var(--grey);
     border: 1px black solid;
     border-radius: 5px;
     z-index: 20;
@@ -138,12 +138,12 @@ nav {
 }
 
 .current-container {
-    background-color: #6FFF87;   
+    background-color: var(--green);   
 }
 
 /* Footer */
 footer {
-    background-color: #e6e6e6;
+    background-color: var(--grey);
     font-size: 0.7rem;
 }
 
@@ -180,11 +180,6 @@ footer {
     margin: 0px 0px;
 }
 
-.spacing {
-    background-color: #f7f7f7;
-    min-height: 20px;
-}
-
 /* Sections */
 .section-subcontainer  {
     max-width: 600px;
@@ -193,7 +188,7 @@ footer {
 }
 
 .top-section {
-    background-color: #D7DED4;
+    background-color: var(--light-green);
     min-height: 60px;
     padding: 20px 10px 0px 10px;
     margin-bottom: 20px;
@@ -232,27 +227,27 @@ footer {
 
 /* Bacground Colours */
 .red-section {
-    background-color: #E88A9B;
+    background-color: var(--red);
 }
 
 .aqua-section {
-    background-color: #4DD4D5;
+    background-color: var(--aqua);
 }
 
 .orange-section {
-    background-color: #D59F8E;
+    background-color: var(--orange);
 }
 
 .purple-section {
-    background-color: #DD96E5;
+    background-color: var(--purple);
 }
 
 .blue-section {
-    background-color: #889AD5;
+    background-color: var(--blue);
 }
 
 .light-green-container {
-    background-color: #D7DED4;
+    background-color: var(--light-green);
 }
 
 /* Specific CSS for individual pages */
@@ -276,7 +271,7 @@ footer {
     font-family: noto-sans-cjk-kr, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
-    background-color: #6FFF87;
+    background-color: var(--green);
     padding: 5px 20px;
     cursor: pointer;
     position: relative;
@@ -315,7 +310,7 @@ footer {
 }
 
 .home-button {
-    background-color: #F7F7F7;
+    background-color: var(--white);
     color: #565656;
 }
 

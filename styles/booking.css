@@ -36,7 +36,7 @@ input[type=number] {
 
 .dates,
 .join-apply-checkbox {
-    background-color: #e6e6e6;
+    background-color: var(--white);
     border: 1px solid black;
     box-shadow: 3px 3px rgba(48, 51, 54, 0.4);
     border-radius: 5px;
@@ -78,7 +78,7 @@ input[type=number] {
 #holiday-club:checked ~ .holiday-club,
 #volunteer:checked ~ .volunteer,
 #internship:checked ~ .internship {
-    background-color: #6FFF87;
+    background-color: var(--green);
 }
 
 #date-1,
@@ -103,7 +103,7 @@ input[type=number] {
 
 .dates:hover,
 .join-apply-checkbox:hover {
-    background-color: #6FFF87;
+    background-color: var(--green);
 }
 
 /* Removing arrows from number input */
