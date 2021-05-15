@@ -1,9 +1,11 @@
 /* CSS specific for this page */
 .museum-name {
     font-size: 1.2rem;
-    color: #3FA652;
+    font-weight: bold;
+    color: green;
     text-shadow: -1px 0 #21552A, 0 1px #21552A, 1px 0 #21552A, 0 -1px #21552A;
     margin-bottom: 0px;
+    padding-left: 10px;
 }
 
 .about-page-motto {
@@ -26,7 +28,7 @@
         max-height: 100px;
     }
     .museum-name {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     .contact-info-subcontainer {
