@@ -399,6 +399,11 @@ footer {
     .special-images {
         object-position: top;
     }
+    
+    .map {
+        width: 600px;
+        height: 400px;
+    }
 }
 
 @media (min-width: 907px) {
