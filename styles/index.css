@@ -29,6 +29,16 @@ h2 {
     flex-direction: column;
 }
 
+.about-section h1 {
+    font-size: 3rem;
+    color: var(--green);
+    text-shadow: -2px 0 #21552a, 0 2px #21552a, 2px 0 #21552a, 0 -2px #21552a;
+}
+
+.about-section  h2{
+    margin: 30px 0px;
+}
+
 .events-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -55,7 +65,7 @@ h2 {
     border-radius: 10px;
     color: black;
     text-align: center;
-    box-shadow: 3px 3px rgba(48, 51, 54, 0.4);
+    box-shadow: 3px 3px 3px rgba(48, 51, 54, 0.4);
 }
 
 .explore-subcontainer {
@@ -66,7 +76,12 @@ h2 {
     min-height: 190px;
     border-radius: 10px;
     padding-left: 5px;
-    box-shadow: 3px 3px rgba(48, 51, 54, 0.4);
+    box-shadow: 3px 3px 3px rgba(48, 51, 54, 0.4);
+}
+
+.events-subcontainer:hover,
+.exhibits-subcontainer:hover {
+    box-shadow: 8px 7px 6px rgba(48, 51, 54, 1);
 }
 
 .exhibits-subcontainer {
@@ -101,13 +116,19 @@ h2 {
 .exhibits-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: space-around;
-    gap: 15px;
+    gap: 5px;
 }
 
 .exhibits-robotics-h3 {
     display: inline-block;
     margin: 0px 5px;
+}
+
+.exhibit-link {
+    display: grid;
+    place-items: center;
+    margin-bottom: 5px;
+
 }
 
 .exhibits-buttons {
@@ -132,12 +153,15 @@ h2 {
 .events-image,
 .explore-image,
 .exhibits-image {
+    object-fit: cover;
     width: 95px;
     height: 95px;
     border-radius: 10px;
 }
 
 .explore-image-container {
+    display: grid;
+    
     align-self: center;
 }
 
@@ -160,6 +184,13 @@ h2 {
 /* Media queries for this page */
 
 @media (min-width: 600px) {
+    .exhibits-container {
+        gap: 10px;
+    }
+    .about-section h1 {
+        font-size: 4rem;
+    }
+
     h2 {
         padding-left: 50px;
     }
@@ -204,6 +235,10 @@ h2 {
         padding-left: 50px;
     }
 
+    .about-section {
+        display: grid;
+        grid-template-columns: auto;
+    }
 
     .events-subcontainer,
     .exhibits-subcontainer {

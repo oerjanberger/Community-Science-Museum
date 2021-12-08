@@ -30,23 +30,13 @@
         <nav>
             <a href="index.html" class="logo-container">
                 <div>
-                    <img src="images/Logo.png"
-                        alt="the community science museum logo. A large green c with elektrons floating around it making it look like an atom"
-                        class="logo">
+                    <img src="images/Logo.png" alt="the community science museum logo" class="logo">
                 </div>
                 <p class="motto">"Explore together"</p>
             </a>
             <div class="nav-icon-container">
                 <div class="search-button-container">
-                    <label for="dropdown-searchbar" class="search-button"><i class="fas fa-search"></i></label>
-                    <input type="checkbox" id="dropdown-searchbar">
-                    <section class="searchbar-container">
-                        <form action="search_result.php" method="POST">
-                            <input type="text" placeholder="Search.." name="search" alt="search" class="searchbar">
-                            <button type="submit" class="searchbar-button"><i
-                                    class="fas fa-search searchbar-trigger"></i></button>
-                        </form>
-                    </section>
+                    <i class="fas fa-search activate-search-menu"></i></label>
                 </div>
                 <div>
                     <label for="dropdown-menu" class="hamburger-menu"><i class="fas fa-bars"></i></label>
@@ -93,20 +83,31 @@
                     </section>
                 </div>
             </div>
+            <section class="searchbar-container">
+                <form action="search_result.php" method="POST">
+                    <input type="text" placeholder="Search.." name="search" alt="search" class="searchbar">
+                    <button type="submit" class="searchbar-button"><i
+                            class="fas fa-search searchbar-trigger"></i></button>
+                </form>
+            </section>
         </nav>
     </header>
     <main>
         <div class="background"></div>
         <div class="welcome-image-container">
             <img src="images/scott-webb-102825-scaled.jpg"
-                alt="image of the colourful outside wall of the museum with museum spelled along the side. A green hedge is seen below it"
-                class="top-image">
+                alt="the colourful outside wall of the museum with museum spelled along the side" class="top-image">
         </div>
         <section class="standard-index-section welcome-section">
-            <div class="section-image-container welcome-section-container">
-                <h1>Come join us at the Community Science Museum where we are committed to making science accessible to
+            <div class="section-image-container welcome-section-container about-section">
+                <h1>Welcome</h1>
+                <img src="images/billetto-editorial-334686-scaled.jpg"
+                    alt="a boy wearing a VR headset holding a paint brush ready to paint on a canvas in front of him"
+                    class="section-image">
+                <h2>Come join us at the Community Science Museum where we are committed to making science accessible
+                    to
                     all
-                </h1>
+                </h2>
                 <a href="about.html"><button class="button">About us</button></a>
             </div>
         </section>
@@ -117,7 +118,7 @@
                     <a href="events.html">
                         <div class="events-subcontainer red-section">
                             <img src="images/andrew-ruiz-348421-scaled.jpg"
-                                alt="image of astronaut with yellow suite and helmet sitting in chair looking at many screens all around"
+                                alt="Astronaut with yellow suite and helmet sitting in chair looking at many screens all around"
                                 class="events-image">
                             <h3>Visiting Professor of Aeoronatutics</h3>
                         </div>
@@ -125,7 +126,7 @@
                     <a href="events.html">
                         <div class="events-subcontainer aqua-section ">
                             <img src="images/mammoth-1257288_1920-scaled.jpg"
-                                alt="image of the full scale sceloton of a large Mammoth displayed in the museum"
+                                alt="The full scale sceloton of a large Mammoth displayed in the museum"
                                 class="events-image">
                             <h3>Night in the Museum</h3>
                         </div>
@@ -133,7 +134,7 @@
                     <a href="events.html">
                         <div class="events-subcontainer orange-section">
                             <img src="images/scientific-2040795_1280-scaled.jpg"
-                                alt="image of acientist whit a white lab coat and safet glasses, sitting on her knees looking in to the open door of the large turbine that are able to use and control wind to create power"
+                                alt="Scientist sitting on her knees looking in the open door of a large turbine"
                                 class="events-image">
                             <h3>Energetica Exhibition on Loan</h3>
                         </div>
@@ -148,8 +149,7 @@
                     <div class="explore-subcontainer aqua-section ">
                         <div class="explore-image-container">
                             <a href="explore.html"><img src="images/samuel-zeller-158996-small.jpg"
-                                    alt="image of a child wearing a VR headset looking upwards, seeing something in the VR headset"
-                                    class="explore-image"></a>
+                                    alt="a child wearing a VR headset looking upwards" class="explore-image"></a>
                         </div>
                         <div class="explore-text-container">
                             <div>
@@ -165,7 +165,7 @@
                     <div class="explore-subcontainer red-section">
                         <div class="explore-image-container">
                             <a href="explore.html"><img src="images/teacher-2816112-small.jpg"
-                                    alt="image of a cartoon teacher standing behind a desk. On the desk there is 2 science flasks, one with a red liquid and one with a green liquid"
+                                    alt="a cartoon teacher standing behind a desk. On the desk there is 2 science flasks"
                                     class="explore-image"></a>
                         </div>
                         <div class="explore-text-container">
@@ -182,7 +182,7 @@
                     <div class="explore-subcontainer orange-section">
                         <div class="explore-image-container">
                             <a href="explore.html"><img src="images/people-219985_1280-small.jpg"
-                                    alt="image of a man looking through a microscope" class="explore-image"></a>
+                                    alt="a man looking through a microscope" class="explore-image"></a>
                         </div>
                         <div class="explore-text-container">
                             <div>
@@ -200,42 +200,42 @@
             <div class="section-image-container">
                 <h2>Exhibits</h2>
                 <div class="exhibits-container">
-                    <a href="exhibits.html">
+                    <a href="exhibits.html" class="exhibit-link">
                         <div class="exhibits-subcontainer blue-section ">
                             <img src="images/celso-405219-scaled.jpg"
-                                alt="image showing the moon in its different stages of fullness stretch out next to one another. In the middle there is also 2 red moons"
+                                alt="the moon in its different stages of fullness stretch out next to one another. In the middle there is also 2 red moons"
                                 class="exhibits-image">
                             <h3>Cosmology</h3>
                         </div>
                     </a>
-                    <a href="exhibits.html">
+                    <a href="exhibits.html" class="exhibit-link">
                         <div class="exhibits-subcontainer purple-section">
                             <img src="images/skeleton-414543_1920-scaled.jpg"
-                                alt="image showing for scelotons next to one another. From left there is a homo sapien sceloton, then there is a homo erectus sceloton, next there is a smaller sceloton of an gibbon ape, lastly there is a sceloton of a lemur ape"
+                                alt="four scelotons next to one another, homo sapien sceloton, homo erectus sceloton, sceloton of an gibbon ape, sceloton of a lemur ape"
                                 class="exhibits-image">
                             <h3>Evolution</h3>
                         </div>
                     </a>
-                    <a href="exhibits.html">
+                    <a href="exhibits.html" class="exhibit-link">
                         <div class="exhibits-subcontainer aqua-section ">
                             <img src="images/samuel-zeller-113381-scaled.jpg"
-                                alt="image of a plastic human model. The anatomy of a human is showcased on the model. From sceloton to inner organs"
+                                alt="a plastic human model. The anatomy of a human is showcased on the model. From sceloton to inner organs"
                                 class="exhibits-image">
                             <h3>Biology and Medicine</h3>
                         </div>
                     </a>
-                    <a href="exhibits.html">
+                    <a href="exhibits.html" class="exhibit-link">
                         <div class="exhibits-subcontainer orange-section">
                             <img src="images/jason-leung-1DjbGRDh7-E-unsplash-scaled.jpg"
-                                alt="image of a lego robot waving. It is built with to large eyes and two hands with a yellow square body and two rubber tracks that it can move around on. It is based on the movie Wall-E"
+                                alt="lego robot waving. large eyes and two hands, yellow square body, two rubber tracks. based on the movie Wall-E"
                                 class="exhibits-image">
                             <h3 class="exhibits-robotics-h3">Robotics and AI</h3>
                         </div>
                     </a>
-                    <a href="exhibits.html">
+                    <a href="exhibits.html" class="exhibit-link">
                         <div class="exhibits-subcontainer red-section">
                             <img src="images/man-chung-XZcpTL3H_M0-unsplash-scaled.jpg"
-                                alt="image of a strawberry plant with greenleafs. On the stem of the plant there is a ladybug. In the background there is many green plants"
+                                alt="a strawberry plant with greenleafs. On the stem of the plant there is a ladybug"
                                 class="exhibits-image">
                             <h3>Ecology</h3>
                         </div>
@@ -324,7 +324,7 @@
             </section>
         </div>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
