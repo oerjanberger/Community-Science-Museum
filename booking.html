@@ -36,15 +36,7 @@
             </a>
             <div class="nav-icon-container">
                 <div class="search-button-container">
-                    <label for="dropdown-searchbar" class="search-button"><i class="fas fa-search"></i></label>
-                    <input type="checkbox" id="dropdown-searchbar">
-                    <section class="searchbar-container">
-                        <form action="search_result.php" method="POST">
-                            <input type="text" placeholder="Search.." name="search" alt="search" class="searchbar">
-                            <button type="submit" class="searchbar-button"><i
-                                    class="fas fa-search searchbar-trigger"></i></button>
-                        </form>
-                    </section>
+                    <i class="fas fa-search activate-search-menu"></i></label>
                 </div>
                 <div>
                     <label for="dropdown-menu" class="hamburger-menu"><i class="fas fa-bars"></i></label>
@@ -104,19 +96,27 @@
         <section class="standard-section light-green-container">
             <div class="section-subcontainer">
                 <h1>Booking and Application</h1>
+                <div id="special-event-success-message"></div>
+                <div id="booking-success-message"></div>
+                <div id="join-club-success-message"></div>
+                <div id="involved-success-message"></div>
                 <div>
                     <h2>Special events</h2>
-                    <form action="events.php" method="POST">
+                    <form id="special-event-form" action="" method="POST">
                         <div class="booking-container">
                             <div class="booking-subcontainer">
                                 <label for="name">Name</label>
                                 <input id="name" type="name" placeholder="Name.." name="name" alt="name"
                                     class="searchbar booking-large">
+                                <p id="special-event-name-errorMessage" class="errorMessage">Please enter a your name
+                                </p>
                             </div>
                             <div class="booking-subcontainer">
                                 <label for="email">Email</label>
                                 <input id="email" type="email" placeholder="Email.." name="email" alt="email"
                                     class="searchbar booking-large">
+                                <p id="special-event-email-errorMessage" class="errorMessage">Please enter a valid Email
+                                </p>
                             </div>
                         </div>
                         <p>Number of persons</p>
@@ -131,7 +131,11 @@
                                 <input id="children" type="number" placeholder="0" name="children" alt="children"
                                     class="searchbar booking-small">
                             </div>
+
                         </div>
+                        <p id="special-event-persons-errorMessage" class="errorMessage">Please select how many
+                            people the booking is for
+                        </p>
                         <div class="booking-events-container">
                             <div>
                                 <h3>Visiting Professor of Aeronatutics</h3>
@@ -141,6 +145,7 @@
                                     class="dates date-2">26.05</label>
                                 <input type="checkbox" name="date" value="28.05" id="date-3"><label for="date-3"
                                     class="dates date-3">28.05</label>
+
                             </div>
                             <div>
                                 <h3 class="info-heading">Night in the Museum</h3>
@@ -151,25 +156,34 @@
                                 <input type="checkbox" name="date" value="12.06" id="date-6"><label for="date-6"
                                     class="dates date-6">12.06</label>
                             </div>
+
+                        </div>
+                        <p id="special-event-date-errorMessage" class="errorMessage">Please select a date for one or
+                            more events
+                        </p>
+                        <div class="right-button-container booking-events-button">
+                            <button class="button" id="special-event-btn">Book now</button>
                         </div>
                     </form>
-                    <div class="right-button-container booking-events-button">
-                        <a href="confirmation.html"><button class="button">Book now</button></a>
-                    </div>
+
                 </div>
                 <div>
                     <h2>Groups</h2>
-                    <form action="group_tour.php" method="POST">
+                    <form id="booking-form" action="group_tour.php" method="POST">
                         <div class="booking-container">
                             <div class="booking-subcontainer">
                                 <label for="name2">Name</label>
                                 <input id="name2" type="name" placeholder="Name.." name="name" alt="name"
                                     class="searchbar booking-large">
+                                <p id="booking-name-errorMessage" class="errorMessage">Please enter a your name
+                                </p>
                             </div>
                             <div class="booking-subcontainer">
                                 <label for="email2">Email</label>
                                 <input id="email2" type="email" placeholder="Email.." name="email" alt="email"
                                     class="searchbar booking-large">
+                                <p id="booking-email-errorMessage" class="errorMessage">Please enter a your Email
+                                </p>
                             </div>
                         </div>
                         <p>Number of persons</p>
@@ -184,25 +198,42 @@
                                 <input id="children2" type="number" placeholder="0" name="children" alt="children"
                                     class="searchbar booking-small">
                             </div>
+                            <p id="booking-persons-errorMessage" class="errorMessage">Please select how many
+                                people the booking is for
+                            </p>
+                        </div>
+                        <p>Select a date</p>
+                        <div class="booking-subcontainer">
+                            <label for="calender">Calender</label>
+                            <input id="calender" type="date" name="calender" alt="calender"
+                                class="searchbar booking-large">
+                            <p id="booking-date-errorMessage" class="errorMessage">Please select a date for your group
+                                visit
+                            </p>
+                        </div>
+                        <div class="right-button-container">
+                            <button class="button" id="booking-btn">Book now</button>
                         </div>
                     </form>
-                    <div class="right-button-container">
-                        <a href="confirmation.html"><button class="button">Book now</button></a>
-                    </div>
+
                 </div>
                 <div>
                     <h2>Join our clubs</h2>
-                    <form action="club.php" method="POST">
+                    <form id="joing-club-form" action="club.php" method="POST">
                         <div class="booking-container">
                             <div class="booking-subcontainer">
                                 <label for="name3">Name</label>
                                 <input id="name3" type="name" placeholder="Name.." name="name" alt="name"
                                     class="searchbar booking-large">
+                                <p id="join-club-name-errorMessage" class="errorMessage">Please enter a your name
+                                </p>
                             </div>
                             <div class="booking-subcontainer">
                                 <label for="email3">Email</label>
                                 <input id="email3" type="email" placeholder="Email.." name="email" alt="email"
                                     class="searchbar booking-large">
+                                <p id="join-club-email-errorMessage" class="errorMessage">Please enter a valid Email
+                                </p>
                             </div>
                         </div>
                         <p>I want to join the:</p>
@@ -212,25 +243,34 @@
                                 Club</label>
                             <input type="checkbox" name="club" value="holiday club" id="holiday-club"><label
                                 for="holiday-club" class="join-apply-checkbox holiday-club">Holiday Club</label>
+
+                        </div>
+                        <p id="join-club-select-errorMessage" class="errorMessage">Please choose one or more
+                            clubs to join
+                        </p>
+                        <div class="right-button-container booking-events-button">
+                            <button class="button" id="join-btn">Join now</button>
                         </div>
                     </form>
-                    <div class="right-button-container booking-events-button">
-                        <a href="confirmation.html"><button class="button">Join now</button></a>
-                    </div>
+
                 </div>
                 <div>
                     <h2>Get involved</h2>
-                    <form action="involved.php" method="POST">
+                    <form id="involved-form" action="involved.php" method="POST">
                         <div class="booking-container">
                             <div class="booking-subcontainer">
-                                <label for="name">Name</label>
-                                <input type="name" placeholder="Name.." name="name" alt="name"
+                                <label for="name4">Name</label>
+                                <input id="name4" type="name" placeholder="Name.." name="name" alt="name"
                                     class="searchbar booking-large">
+                                <p id="involved-name-errorMessage" class="errorMessage">Please enter a your name
+                                </p>
                             </div>
                             <div class="booking-subcontainer">
                                 <label for="email4">Email</label>
                                 <input id="email4" type="email" placeholder="Email.." name="email" alt="email"
                                     class="searchbar booking-large">
+                                <p id="involved-email-errorMessage" class="errorMessage">Please enter a valid Email
+                                </p>
                             </div>
                         </div>
                         <p>I want to:</p>
@@ -239,11 +279,16 @@
                                 for="volunteer" class="join-apply-checkbox volunteer">Volunteer</label>
                             <input type="checkbox" name="involved" value="internship" id="internship"><label
                                 for="internship" class="join-apply-checkbox internship">Internship</label>
+
+                        </div>
+                        <p id="involved-select-errorMessage" class="errorMessage">Please choose what you want to
+                            apply for
+                        </p>
+                        <div class="right-button-container booking-events-button">
+                            <button class="button" id="involved-btn">Apply now</button>
                         </div>
                     </form>
-                    <div class="right-button-container booking-events-button">
-                        <a href="confirmation.html"><button class="button">Apply now</button></a>
-                    </div>
+
                 </div>
         </section>
         <section class="standard-section home-button-section">
@@ -305,7 +350,8 @@
             </section>
         </div>
     </footer>
-
+    <script src="js/script.js"></script>
+    <script src="js/booking.js"></script>
 </body>
 
 </html>
